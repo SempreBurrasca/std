@@ -16,9 +16,11 @@ body {
 
   .headlines h1 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 110px;
-    line-height: 140px;
-    font-weight: 200;
+    font-size: 90px;
+    margin: 0 22 50% 022;
+    font-weight: 100;
+    margin-bottom: 45%;
+    margin-top: 0%;
   }
 
  
@@ -54,4 +56,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
+  .subtitle-logo{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 50px;
+    line-height: 140px;
+    font-weight: 200;
+    text-align: justify
+  }
