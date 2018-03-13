@@ -17,10 +17,9 @@ body {
   .headlines h1 {
     font-family: 'Titillium Web', sans-serif;
     font-size: 90px;
-    margin: 0 22 50% 022;
+    margin: 0 22 20% 022;
     font-weight: 100;
-    margin-bottom: 45%;
-    margin-top: 0%;
+    
   }
 
  
@@ -45,7 +44,7 @@ body {
   
   /* ---- style Star*Tap ---- */
 
-  .flex-container {
+  /*.flex-container {
     height: 100%;
     padding: 0;
     margin: 0;
@@ -56,11 +55,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap
+    ;
   }
+  
   .subtitle-logo{
     font-family: 'Titillium Web', sans-serif;
     font-size: 50px;
     line-height: 140px;
     font-weight: 200;
-    text-align: justify
+    text-align: center;
+    margin-top: -10% !important;
+    margin-left: 15pX !important;
+    letter-spacing: 22px;
   }
+  .logotype{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90px;
+    margin: 0 22 20% 022;
+    font-weight: 100;
+    
+  }*/
