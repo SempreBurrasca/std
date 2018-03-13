@@ -45,7 +45,7 @@
         <div class="container">
              
             <div class="header-content">
-                <div class="row headlines text-center ">
+                <div class="row headlines text-center " >
                         <?xml version="1.0" encoding="utf-8"?>
                         <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                         <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -60,7 +60,7 @@
 
                         </style>
                         <g>
-                            <text transform="matrix(1 0 0 1 22.3369 553.4283)" class="st0 st1 st2 st3">DIGITAL STRATEGIES</text>
+                            <text id="sottotitolo" transform="matrix(1 0 0 1 22.3369 553.4283)" class="st0 st1 st2 st3"></text>
                             <g>
                                 <g>
                                     <g>
@@ -108,6 +108,18 @@
 
   <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
   <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.min.js'></script>
+  <script>
+    
+
+    setInterval(function(){ 
+        var sezioni = ["DIGITAL STRATEGIES", "BLOCKCHAIN", "PRODUCTION"];
+        var randomSezioni = sezioni[Math.floor(Math.random()*sezioni.length)];
+        document.getElementById("sottotitolo").innerHTML = randomSezioni; 
+        }, 1000);
+   
+      
+  </script>
   <script src="src/js/index.js"></script>
   
 </html>
