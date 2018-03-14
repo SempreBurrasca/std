@@ -57,6 +57,9 @@
                             .st2{font-size:47.0973px;font-weight: 200;}
                             .st3{letter-spacing:29;}
                             .st4{font-size:183.4961px;font-weight: 200;}
+                            .ds{font-size:47.0973px;font-weight: 200;letter-spacing:29;}
+                            .bc{font-size:47.0973px;font-weight: 200;letter-spacing:260;}
+                            .prd{font-size:47.0973px;font-weight: 200;letter-spacing:160;}
 
                         </style>
                         <g>
@@ -113,10 +116,43 @@
     
 
     setInterval(function(){ 
-        var sezioni = ["DIGITAL STRATEGIES", "BLOCKCHAIN", "PRODUCTION"];
-        var randomSezioni = sezioni[Math.floor(Math.random()*sezioni.length)];
-        document.getElementById("sottotitolo").innerHTML = randomSezioni; 
-        }, 1000);
+                            var sezioni = ["DIGITAL STRATEGIES", "BLOCKCHAIN", "PRODUCTION"];
+                            var prova = document.getElementById("sottotitolo").innerHTML
+                            var randomSezioni = sezioni[Math.floor(Math.random()*sezioni.length)];
+                            
+                            document.getElementById("sottotitolo").innerHTML = randomSezioni;
+                            if (randomSezioni == "DIGITAL STRATEGIES") {
+                                document.getElementById("sottotitolo").style.letterSpacing = "29px";
+                                document.getElementById("sottotitolo").style.transition = "all 1s";
+                                
+                            } else if (randomSezioni == "BLOCKCHAIN") {
+                                document.getElementById("sottotitolo").style.letterSpacing = "72px";
+                                document.getElementById("sottotitolo").style.transition = "all 1s";
+                                
+                            } else {
+                                document.getElementById("sottotitolo").style.letterSpacing = "72px";
+                                document.getElementById("sottotitolo").style.transition = "all 1s";
+
+                            };
+
+                            
+                        }, 3000);
+    
+                        /*var prova = document.getElementById("sottotitolo").innerHTML
+                            if (prova = "DIGITAL STRATEGIES") {
+                                document.getElementById("sottotitolo").classList.remove("bc");
+                                document.getElementById("sottotitolo").classList.remove("prd");
+                                document.getElementById("sottotitolo").classList.add("ds");
+                            } else if (prova = "BLOCKCHAIN"){
+                                document.getElementById("sottotitolo").classList.remove("ds");
+                                document.getElementById("sottotitolo").classList.remove("prd");
+                                document.getElementById("sottotitolo").classList.add("bc"); 
+                            } else {
+                                document.getElementById("sottotitolo").classList.remove("ds");
+                                document.getElementById("sottotitolo").classList.remove("bc");
+                                document.getElementById("sottotitolo").classList.add("prd");
+                                
+                            }*/
    
       
   </script>
