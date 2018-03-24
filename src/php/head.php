@@ -29,7 +29,11 @@
       <link rel="stylesheet" type="text/css" href="https://storj.io/slick/slick-theme.css"/>
   
       <script src="https://storj.io/js/modernizr.js"></script>
+      <!--import font-->
       <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+      <!--import materialize-->
+      <link rel="stylesheet" href="src/css/materialize.css">
+
       <link rel="stylesheet" href="src/css/index.css">
   
       <!--[if lt IE 9]>

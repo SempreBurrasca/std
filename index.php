@@ -1,4 +1,8 @@
-
+<!--INTEGRATE WORDPRESS-->
+<?php 
+define('WP_USE_THEMES', false);
+require('wp-core/wp-blog-header.php');
+?>
 <html lang="en">
     <head>
         <!--IMPORT HEAD-->
