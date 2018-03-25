@@ -8,63 +8,65 @@ require('wp-core/wp-blog-header.php');
         <!--IMPORT HEAD-->
         <?php include 'src/php/head.php' ?>
     </head>
-    <body class="home">
-        <!--LOGO STARTAP-->
-        <section class="header">
-            <div class="container">
-                <div class="header-content">
-                    <div class="row headlines text-center " >
-                            <xml version="1.0" encoding="utf-8">
-                            <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                            <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 1000 575.4" style="enable-background:new 0 0 1000 575.4;width:75%;" xml:space="preserve">                                
-                            <style type="text/css">
-                                .st0{fill:#eef0f1;}
-                                .st1{font-family:'Titillium Web';}
-                                .st2{font-size:47.0973px;font-weight: 200;}
-                                .st3{letter-spacing:29;}
-                                .st4{font-size:183.4961px;font-weight: 200;}
-                                .ds{font-size:47.0973px;font-weight: 200;letter-spacing:29;}
-                                .bc{font-size:47.0973px;font-weight: 200;letter-spacing:260;}
-                                .prd{font-size:47.0973px;font-weight: 200;letter-spacing:160;}
+    <body onload="" class="bg-dark " id="">
 
-                            </style>
-                            <g>
-                                <text id="sottotitolo" transform="matrix(1 0 0 1 22.3369 553.4283)" class=" st0 st1 st2 st3 lines"></text>
-                                <g>
+                    <!--LOGO-->
+                    <div id="home" class="flex cont rows z-2">
+                        <div class="star-row perfect-center">
+                            <div id="starMove"class="f-1 ">                                
+                                <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 924.181 602.879" style="enable-background:new 0 0 924.181 602.879;width:100%;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0{fill:#eef0f1;}
+                                        .st1{font-family:'Titillium Web';}
+                                        .st2{font-size:47.0973px;font-weight: 200;}
+                                        .st3{letter-spacing:29;}
+                                        .st4{font-size:183.4961px;font-weight: 200;}
+                                        .ds{font-size:47.0973px;font-weight: 200;letter-spacing:29;}
+                                        .bc{font-size:47.0973px;font-weight: 200;letter-spacing:260;}
+                                        .prd{font-size:47.0973px;font-weight: 200;letter-spacing:160;}
+                                    </style>
+                                    
                                     <g>
-                                        <g>
-                                            <path class="st0" d="M505.2,477.6c-0.7,0-1.2-0.5-1.2-1.2V26.5c0-0.7,0.5-1.2,1.2-1.2c0.7,0,1.2,0.5,1.2,1.2v449.9
-                                                C506.4,477.1,505.8,477.6,505.2,477.6z"/>
-                                        </g>
-                                        <g>
-                                            <path class="st0" d="M644.1,247.8H366.2c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2h277.9c0.7,0,1.2,0.5,1.2,1.2
-                                                C645.3,247.3,644.8,247.8,644.1,247.8z"/>
-                                        </g>
-                                        <g>
-                                            <path class="st0" d="M405.8,271.2c-0.3,0-0.6-0.1-0.8-0.4c-0.5-0.5-0.5-1.2,0-1.7l122.8-122.8c0.5-0.5,1.2-0.5,1.7,0
-                                                c0.5,0.5,0.5,1.2,0,1.7L406.7,270.8C406.4,271.1,406.1,271.2,405.8,271.2z"/>
-                                        </g>
-                                        <g>
-                                            <path class="st0" d="M444.2,308.9c-0.3,0-0.6-0.1-0.8-0.4c-0.5-0.5-0.5-1.2,0-1.7l121.4-121.4c0.5-0.5,1.2-0.5,1.7,0
-                                                c0.5,0.5,0.5,1.2,0,1.7L445,308.6C444.8,308.8,444.5,308.9,444.2,308.9z"/>
-                                        </g>
-                                        <g>
-                                            <path class="st0" d="M481.8,347.1c-0.3,0-0.6-0.1-0.8-0.4c-0.5-0.5-0.5-1.2,0-1.7l122.8-122.8c0.5-0.5,1.2-0.5,1.7,0
-                                                c0.5,0.5,0.5,1.2,0,1.7L482.6,346.8C482.4,347,482.1,347.1,481.8,347.1z"/>
-                                        </g>
-                                    </g>
+                                        <text id="sottotitolo" transform="matrix(1 0 0 1 22.3369 553.4283)" class=" st0 st1 st2 st3 lines"></text>
                                     <g>
-                                        <text transform="matrix(1 0 0 1 19.4883 304.9752)" class="st0 st1 st4">Star</text>
-                                        <text transform="matrix(1 0 0 1 679.9883 304.9752)" class="st0 st1 st4">Tap</text>
+                                    <g id="logotype">
+                                        <text id="logotype-1" transform="matrix(1 0 0 1 0 279.928)" class="st0 st1 st4">Star</text>
+                                        
+                                        <text id="logotype-2" transform="matrix(1 0 0 1 660.5 279.928)" class="st0 st1 st4">Tap</text>
                                     </g>
-                                </g>
-                            </g>
-                            </svg>                        
-                    </div>      
-                </div>
-            </div>
-        </section>
+                                    <g id="star" >
+                                        <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                            M485.418,1.5v449.879V1.5z"/>
+                                        <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                            M346.463,221.542h277.911H346.463z"/>
+                                        <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                            M386.065,244.939c0,0,122.751-122.751,122.751-122.751L386.065,244.939z"/>
+                                        <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                            M424.444,282.695c0,0,121.445-121.445,121.445-121.445C545.889,161.25,424.444,282.695,424.444,282.695z"/>
+                                        <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+		                                    M462.333,320.584c0,0,121.445-121.445,121.445-121.445C583.778,199.139,462.333,320.584,462.333,320.584z"/>
+                                    </g>
+                                    <rect id="st-activator" x="400" y="10" width="200" height="400" style="fill:red;opacity:0;"></rect>
+
+                                </svg> 
+                            </div>
+                        </div>   
+                    </div>
+                <!--MISSION-->
+                <div id="mission" class="flex cont rows perfect-center">
+                        <div class="star-row perfect-center">
+                            <div id="starMove"class="f-1 ">      
+                                <h5>dspagpfkgpkafgk</h5>                          
+                                
+                            </div>
+                        </div>   
+                    </div>
+                
+
+                <!--PORTFOLIO-->
+                <!--CONTATTI-->
+
+
     <!--IMPORT SCRIPT-->
     <?php include 'src/php/script.php' ?>
     </body> 
