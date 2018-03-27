@@ -25,7 +25,6 @@ require('wp-core/wp-blog-header.php');
                                         .bc{font-size:47.0973px;font-weight: 200;letter-spacing:260;}
                                         .prd{font-size:47.0973px;font-weight: 200;letter-spacing:160;}
                                     </style>
-                                    
                                     <g>
                                         <text id="sottotitolo" transform="matrix(1 0 0 1 22.3369 553.4283)" class=" st0 st1 st2 st3 lines"></text>
                                     <g>
@@ -34,7 +33,7 @@ require('wp-core/wp-blog-header.php');
                                         
                                         <text id="logotype-2" transform="matrix(1 0 0 1 660.5 279.928)" class="st0 st1 st4">Tap</text>
                                     </g>
-                                    <g id="star" >
+                                    <g id="star"  >
                                         <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
                                             M485.418,1.5v449.879V1.5z"/>
                                         <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
@@ -53,9 +52,56 @@ require('wp-core/wp-blog-header.php');
                         </div>   
                     </div>
                 <!--MISSION-->
-                <div id="mission" class="flex cont rows perfect-center">
+                <div id="mission" name="mission"class="flex cont rows perfect-center">
                         <div class="star-row perfect-center">
-                            <div id="starMove"class="f-1 ">      
+                            <div id="form"class="f-1 ">    
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col m6">
+                                            <input id="name" type="text" class="validate">
+                                            <label for="name">Name</label>
+                                        </div>
+                                        <div class="input-field col m6">
+                                            <input id="last_name" type="text" class="validate">
+                                            <label for="last_name">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="email" type="email" class="validate">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <label for="textarea1">Textarea</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                             <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 924.181 602.879" style="enable-background:new 0 0 924.181 602.879;width:100%;" xml:space="preserve">
+                                                <g id="sendingStar"  >
+
+                                                    <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                                        M386.065,244.939c0,0,122.751-122.751,122.751-122.751L386.065,244.939z"/>
+                                                    <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                                        M424.444,282.695c0,0,121.445-121.445,121.445-121.445C545.889,161.25,424.444,282.695,424.444,282.695z"/>
+                                                    <path class="line" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
+                                                        M462.333,320.584c0,0,121.445-121.445,121.445-121.445C583.778,199.139,462.333,320.584,462.333,320.584z"/>
+                                                </g>
+                                                <rect id="st-activator" x="400" y="10" width="200" height="400" style="fill:red;opacity:0;"></rect>
+
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    </div>
+                                </form>
+                            </div>
+                                   
+                                </form>
+                            </div>  
                                 
                             </div>
                         </div>   
@@ -65,7 +111,10 @@ require('wp-core/wp-blog-header.php');
                 <!--PORTFOLIO-->
                 <!--CONTATTI-->
 
+    <script>
+           
 
+    </script>
     <!--IMPORT SCRIPT-->
     <?php include 'src/php/script.php' ?>
     </body> 

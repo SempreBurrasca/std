@@ -13,7 +13,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <!--import anime.js-->
-    <script src="src/js/anime.min.js"></script>
+    <script src="src/js/anime.js"></script>
     <!--import materialize-->
     <script src="src/js/materialize.js"></script>
 

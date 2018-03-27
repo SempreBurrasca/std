@@ -183,39 +183,47 @@ setInterval(function(){
 
                        
 /*SCROLL TO MISSION SECTION*/
+var playButton = document.querySelector('#st-activator');
+
+myAnimation = anime({
+    targets: '#logo',
+    translateY: 300,
+    easing: 'linear',
+    loop: false,
+    autoplay:false
+      
+    
+    
+  })
+  document.querySelector('#st-activator').onclick = myAnimation.play;window.location.href = "#mission";
+ 
+window.addEventListener('scroll', function() { myAnimation.seek(pageYOffset ); });
 
 
+/*var TLcontrols = anime.timeline({
+  loop: false,
+  easing: 'linear',
+  autoplay: false,
+
+});
+
+TLcontrols
+  .add({
+    targets: '#logo',
+    translateY: 500,
+    offset: 0
+  })
 
 
-      var missionTime = anime.timeline();
-      missionTime
-        .add({
-          targets: '#sottotitolo',
-          opacity: 0,
-          easing: 'easeOutExpo',
-          duration: 1000,
-          offset: 0 
-        })
-        .add({
-          targets: '#logo',
-          scale: 0.5 ,
-          translateY: -500,
-          position: 'fixed',
-          easing: 'easeOutExpo',
-          duration: 1000,
-          offset:1 
-        }) 
-        document.querySelector('#st-activator').onclick = missionTime.play;
+document.querySelector('#st-activator').onclick = TLcontrols.play;
 
+window.addEventListener('scroll', function() {
+  TLcontrols.seek(pageYoffset);
+});
 
-
-
-  /*wheel events*/
-  window.addEventListener('wheel', function(e) {
-    if (e.deltaY < 0) {
-      console.log('scrolling up');
-    }
-    if (e.deltaY > 0) {
-      console.log('scrolling down');
-    }
+/*['input','change'].forEach(function(evt) {
+  controlsProgressEl.addEventListener(evt, function() {
+    TLcontrols.seek(TLcontrols.duration * (controlsProgressEl.value / 100));
   });
+});*/
+

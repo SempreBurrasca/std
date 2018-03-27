@@ -21,7 +21,10 @@
       <link rel="icon" type="" sizes="32x32" href="">
       <link rel="icon" type="" sizes="96x96" href="">
       <link rel="icon" type="" sizes="16x16" href="">
-  
+
+       <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
       <link href="https://storj.io/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://storj.io/css/style.css?v=1.2" rel="stylesheet">
   
