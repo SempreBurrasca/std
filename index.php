@@ -1,8 +1,8 @@
 <!--INTEGRATE WORDPRESS-->
-<?php 
+<!--?php 
 define('WP_USE_THEMES', false);
 require('wp-core/wp-blog-header.php');
-?>
+?-->
 <html lang="en">
     <head>
         <!--IMPORT HEAD-->
@@ -11,7 +11,7 @@ require('wp-core/wp-blog-header.php');
     <body onload="" class="bg-dark " id="">
 
                     <!--LOGO-->
-                    <div id="home" class="flex cont rows z-2">
+                    <div id="home" class="flex cont rows z-2 perfect-center">
                         <div class="star-row perfect-center">
                             <div id="starMove"class="f-1 ">                                
                                 <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 924.181 602.879" style="enable-background:new 0 0 924.181 602.879;width:100%;" xml:space="preserve">
@@ -56,7 +56,6 @@ require('wp-core/wp-blog-header.php');
                 <div id="mission" class="flex cont rows perfect-center">
                         <div class="star-row perfect-center">
                             <div id="starMove"class="f-1 ">      
-                                <h5>dspagpfkgpkafgk</h5>                          
                                 
                             </div>
                         </div>   
