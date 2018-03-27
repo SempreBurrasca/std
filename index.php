@@ -13,7 +13,8 @@ require('wp-core/wp-blog-header.php');
                     <!--LOGO-->
                     <div id="home" class="flex cont rows z-2 perfect-center">
                         <div class="star-row perfect-center">
-                            <div id="starMove"class="f-1 ">                                
+                            <div id="starMove"class="f-1 "> 
+                            <div class="line player"> <input class="progress" step=".001" type="range" min="0" max="100" value="0"> </div>                               
                                 <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 924.181 602.879" style="enable-background:new 0 0 924.181 602.879;width:100%;" xml:space="preserve">
                                     <style type="text/css">
                                         .st0{fill:#eef0f1;}
@@ -51,7 +52,7 @@ require('wp-core/wp-blog-header.php');
                             </div>
                         </div>   
                     </div>
-                <!--MISSION-->
+                <!--MISSION
                 <div id="mission" name="mission"class="flex cont rows perfect-center">
                         <div class="star-row perfect-center">
                             <div id="form"class="f-1 ">    
@@ -108,7 +109,7 @@ require('wp-core/wp-blog-header.php');
                     </div>
                 
 
-                <!--PORTFOLIO-->
+                --><!--PORTFOLIO-->
                 <!--CONTATTI-->
 
     <script>
