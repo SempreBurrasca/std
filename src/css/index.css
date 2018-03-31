@@ -154,16 +154,38 @@ body{
   width: 100%!important;
   height: auto!important;
 }
+/*ELEMENT*/
+.scroll-btn {
+  display: flex;
+  margin-top: 160px;
+  opacity: 0;
+}
+.scroll-btn .material-icons{
+  font-size: 70px;
+}
+
 /*ID*/
+#starMove{
+  position: absolute;
+}
 #logotype-1,#logotype-2,#sottotitolo,#particles-js{
   opacity: 0;
 }
 #logo{
   z-index: 2!important;
-  width:100%;
-  height:auto;
+  width:auto;
+  height:500;
 }
-#mission{
-  
+#hello{
+  z-index: 2!important;
+  width:auto;
+  height:400;
+}
+#st-intro{
+  opacity: 100;
   position: absolute;
 }
+#st-intro text{
+  opacity: 100;
+}
+/*Animazioni*/

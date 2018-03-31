@@ -132,6 +132,11 @@
     offset: 2000 // Starts at 0ms of the timeline
   })
   .add({
+    targets: "#hello",
+    style: 'display:none;',
+    offset:0
+  })
+  .add({
     targets: '#logotype-1',
     opacity: 100,
     easing: 'easeInOutSine',
@@ -159,6 +164,13 @@
     duration: 10000,
     offset: 0 // Starts at 2500ms of the timeline
   })
+  .add({
+    targets: '.scroll-btn',
+    opacity: 100,
+    easing: 'easeInOutSine',
+    duration: 500,
+    offset: 10000 // Starts at 2500ms of the timeline
+  });
 /*GENERAZIONE SOTTOTITOLI*/
   setInterval(function(){ 
     let sezioni = ["DIGITAL STRATEGIES", "BLOCKCHAIN", "PRODUCTION"];
@@ -176,6 +188,16 @@
   }, 3000); 
 
                        
+/*ANIMAZIONE SCROLL-ICON*/
+  
+  IconScroll = anime({
+      easing:'easeInOutSine',
+      loop:true,
+      autoplay: true,
+      targets: '.scroll-btn',
+      translateY: 20,
+      duration: 1000
+    });
 /*Animazione sullo scroll*/
   /*var playButton = document.querySelector('#st-activator');
 
@@ -196,19 +218,82 @@
   
   
   
-/*Animazione sul movimento della rotellina*/  
+
+  /*Animazione sul movimento della rotellina
+    
   var seekAnim = anime({
     targets: '#logo',
     translateX: 350,
-    delay: function(el, i, l) { return i * 100; },
-    elasticity: 200,
+    duration: 2000,
+    elasticity: 50,
     autoplay: false
     });
     let inizio = function(){
       seekAnim.play();
       console.log("funziona")
     }
-    window.addEventListener('wheel', inizio)
+    window.addEventListener('wheel', inizio)*/ 
+
+/*PRIMA ANIMAZIONE SU MOUSE*/
+  let k = 0; 
+  
+  let animationFirst = anime.timeline({
+    loop: false,
+    easing: 'linear',
+    autoplay: false
+  });
+
+  animationFirst
+    .add({
+      targets: '#logo',
+      opacity:0,
+      duration: 2000,
+      offset: 0
+    })
+    .add({
+      targets:'#hello',
+      style: 'display:visible;',
+      offset:0
+    })
+    .add({
+      targets: '#hello path',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 2000,
+      direction: 'alternate',
+      offset: 2000
+    })
+    .add({
+      targets: '#hello text',
+      opacity:100,
+      easing: 'easeInOutSine',
+      duration: 3500,
+      offset: 4000
+
+    })
+    .add({
+      targets: '.scroll-btn',
+      translateY:-100,
+      opacity:0,
+      duration:1000,
+      offset:0
+    })
+    
+    let inizio = function(){
+      let logo = document.getElementById('logo')
+      let scrollbtn = document.getElementById('scrollbtn')
+      animationFirst.play();
+      console.log("funziona");
+    }
+    do {
+    window.addEventListener('wheel', inizio);
+    k += 1;
+    } while (k==0);
+    if (logo.style.opacity == 0){
+      logo.style.display = 'none'
+      scrollbtn.style.display = 'none'
+    }
+    
 
 
 
@@ -254,6 +339,8 @@
             
           
           });*/
-      
+
+/**/
+
 
 
