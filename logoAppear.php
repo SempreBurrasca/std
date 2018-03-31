@@ -29,6 +29,6 @@
                                         <path class="line trd" style="fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="
 		                                    M462.333,320.584c0,0,121.445-121.445,121.445-121.445C583.778,199.139,462.333,320.584,462.333,320.584z"/>
                                     </g>
-                                    <rect id="st-activator" x="400" y="10" width="200" height="400" style="fill:red;opacity:0;"></rect>
+                                    <rect onclick="" id="st-activator" x="360" y="10" width="300" height="400" style="fill:red;opacity:0;"></rect>
 
                                 </svg>

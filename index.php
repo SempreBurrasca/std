@@ -12,24 +12,18 @@ require('wp-core/wp-blog-header.php');
 
                     <!--LOGO-->
                     <div id="home" class="flex cont rows z-2 perfect-center">
-                        <div class="star-row perfect-center">
+                        <div class="star-row perfect-center ">
                             <div id="starMove"class="f-1 "> 
-                                <?php include 'logoAppear.php' ?>
-                                  
-                            </div>
-                            <div id="whoBox"class="f-1 ">                                   
-                            </div>
-                            
-                        </div>    
-                        <div id="scrollbtn"class="star-row perfect-center">
-                            <div class="f-2">
-                                <div class="scroll-btn">
-                                    <i class="material-icons">keyboard_arrow_down</i>
-                                </div>
+                                <?php include 'logoAppear.php' ?>                                  
                             </div>
                         </div>
-                           
+                        <div class="star-row perfect-center ">
+                            <div id="button"class="f-2 "> 
+                                <a href="hello.php"class="st-button">Who?</a>
+                            </div> 
+                        </div>
                     </div>
+                    
                 <!--MISSION
                 <div id="mission" name="mission"class="flex cont rows perfect-center">
                         <div class="star-row perfect-center">

@@ -18,7 +18,12 @@ body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 90px;
     margin: 0 22 20% 022;
-    font-weight: 100;
+    font-weight: 200!important;
+    
+  }
+  p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
     
   }
 
@@ -88,6 +93,9 @@ body{
 .bg-dark {
   background-color: black!important;
 }
+.text-white{
+  color: white;
+}
 /*position*/
 .p-absolute{
   position: absolute!important;
@@ -113,8 +121,11 @@ body{
   justify-content: center;
   align-items: center;
   align-content: center;
-  display: flex;
-  
+  display: flex; 
+}
+.x-center{
+  align-content: center;
+
 }
 .star-row{
   width: 100%;
@@ -154,6 +165,9 @@ body{
   width: 100%!important;
   height: auto!important;
 }
+.fixed{
+  position: fixed;
+}
 /*ELEMENT*/
 .scroll-btn {
   display: flex;
@@ -163,10 +177,21 @@ body{
 .scroll-btn .material-icons{
   font-size: 70px;
 }
+.st-button{
+  color: white;
+  border: 2px solid white;
+  padding: 8px 0;
+  text-align: center;
+  width: 300px;
+  margin: 10;
+  z-index: 3!important;
+}
+.st-button:hover{
+  color: white!important;
+}
 
 /*ID*/
 #starMove{
-  position: absolute;
 }
 #logotype-1,#logotype-2,#sottotitolo,#particles-js{
   opacity: 0;
@@ -174,7 +199,7 @@ body{
 #logo{
   z-index: 2!important;
   width:auto;
-  height:500;
+  height:300;
 }
 #hello{
   z-index: 2!important;
@@ -188,4 +213,9 @@ body{
 #st-intro text{
   opacity: 100;
 }
+#button{
+  opacity:0;
+}
+
+
 /*Animazioni*/

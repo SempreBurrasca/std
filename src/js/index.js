@@ -165,10 +165,10 @@
     offset: 0 // Starts at 2500ms of the timeline
   })
   .add({
-    targets: '.scroll-btn',
+    targets: '#button',
     opacity: 100,
     easing: 'easeInOutSine',
-    duration: 500,
+    duration: 4000,
     offset: 10000 // Starts at 2500ms of the timeline
   });
 /*GENERAZIONE SOTTOTITOLI*/
@@ -180,10 +180,10 @@
         document.getElementById("sottotitolo").style.letterSpacing = "29px";
         
     } else if (randomSezioni == "BLOCKCHAIN") {
-        document.getElementById("sottotitolo").style.letterSpacing = "72px";
+        document.getElementById("sottotitolo").style.letterSpacing = "65px";
         
     } else {
-        document.getElementById("sottotitolo").style.letterSpacing = "72px";
+        document.getElementById("sottotitolo").style.letterSpacing = "65px";
     };
   }, 3000); 
 
@@ -234,7 +234,7 @@
     }
     window.addEventListener('wheel', inizio)*/ 
 
-/*PRIMA ANIMAZIONE SU MOUSE*/
+/*PRIMA ANIMAZIONE SU MOUSE
   let k = 0; 
   
   let animationFirst = anime.timeline({
@@ -272,15 +272,23 @@
 
     })
     .add({
-      targets: '.scroll-btn',
-      translateY:-100,
+      targets: '#hello text',
       opacity:0,
-      duration:1000,
-      offset:0
+      easing: 'easeInOutSine',
+      duration:2000,
+      offset:8000
     })
-    
+    .add({
+      targets: '#finisHome',
+      opacity:100,
+      easing: 'easeInOutSine',
+      duration:3000,
+      offset:10000
+    });
+    let logo = document.getElementById('logo')
+    let hello = document.getElementById('helloCont')
     let inizio = function(){
-      let logo = document.getElementById('logo')
+      
       let scrollbtn = document.getElementById('scrollbtn')
       animationFirst.play();
       console.log("funziona");
@@ -289,13 +297,14 @@
     window.addEventListener('wheel', inizio);
     k += 1;
     } while (k==0);
+
     if (logo.style.opacity == 0){
       logo.style.display = 'none'
       scrollbtn.style.display = 'none'
     }
-    
-
-
+    if (hello.style.opacity == 0){
+      hello.style.display = 'none'
+    }*/
 
     /*ANIMAZIONE SEGUE ROTELLINA DEL MOUSE
       let k = 0
